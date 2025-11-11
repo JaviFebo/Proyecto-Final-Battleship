@@ -1,6 +1,5 @@
 #include "juego.h"
 #include <stdio.h>
-#include <stdio.h>
 
 struct Barco Barco1 = {A, 0, LON_BARCO1, VERTICAL};
 struct Barco Barco2 = {A, 0, LON_BARCO2, VERTICAL};
@@ -54,29 +53,19 @@ int Atacar (struct Tablero *tablero, int x, int y) {
                 return ACIERTO;
         }
 
-        return tablero -> celdas [y][x];
+        return INDF;
 }
 
 void SiguienteTurno (struct Tablero *tablero, int turno) {
-	int x;
-	int y;
+	int x; //Por definir función para obtener este valor
+	int y; //Por definir función para obtener este valor
 	if (turno % 2 != 0) {
 		int ataque = Atacar (&TableroJugador1, x, y);
-		if (ataque == ACIERTO) SiguienteTurno (&TableroJugador1, turno);
+		if (ataque == ACIERTO || ataque == INDF) SiguienteTurno (&TableroJugador1, turno);
 	} else {
 		int ataque = Atacar (&TableroJugador2, x, y);
-		if (ataque == ACIERTO) SiguienteTurno (&TableroJugador2, turno);
+		if (ataque == ACIERTO ataque == INDF) SiguienteTurno (&TableroJugador2, turno);
 	}
 	turno++;
-}
-
-void ImpTablero (struct Tablero *tablero) {
-        for (int i = 0; i < TAMANO_TABLERO; i++) {
-                printf ("\n");
-                for (int j = 0; j < TAMANO_TABLERO; j++) {
-                        printf (" %d ", tablero -> celdas [i][j]);
-                }
-        }
-        printf ("\n");
 }
 

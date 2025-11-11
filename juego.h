@@ -63,6 +63,8 @@ void ColocarBarco (struct Tablero *tablero, int num_barco, int x, int y);
 
 int Atacar (struct Tablero *tablero, int x, int y);
 
+void SiguienteTurno (struct Tablero *tablero, int turno);
+
 void ImpTablero (struct Tablero *tablero);
 
 extern struct Tablero TableroJugador1;
@@ -73,6 +75,8 @@ extern struct Barco Barco2;
 extern struct Barco Barco3;
 extern struct Barco Barco4;
 extern struct Barco Barco5;
+
+extern int turno;
 
 #endif
 

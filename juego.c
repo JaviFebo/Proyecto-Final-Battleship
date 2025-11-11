@@ -11,6 +11,8 @@ struct Barco Barco5 = {A, 0, LON_BARCO5, VERTICAL};
 struct Tablero TableroJugador1;
 struct Tablero TableroJugador2;
 
+int turno = 1;
+
 void InitTablero (struct Tablero *tablero) {
         tablero -> barcos[0] = Barco1;
         tablero -> barcos[1] = Barco2;
@@ -53,6 +55,19 @@ int Atacar (struct Tablero *tablero, int x, int y) {
         }
 
         return tablero -> celdas [y][x];
+}
+
+void SiguienteTurno (struct Tablero *tablero, int turno) {
+	int x;
+	int y;
+	if (turno % 2 != 0) {
+		int ataque = Atacar (&TableroJugador1, x, y);
+		if (ataque == ACIERTO) SiguienteTurno (&TableroJugador1, turno);
+	} else {
+		int ataque = Atacar (&TableroJugador2, x, y);
+		if (ataque == ACIERTO) SiguienteTurno (&TableroJugador2, turno);
+	}
+	turno++;
 }
 
 void ImpTablero (struct Tablero *tablero) {

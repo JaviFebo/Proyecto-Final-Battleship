@@ -29,16 +29,5 @@
  */
 
 int main (void) {
-	struct Barco Barco1 = {A, 0, LON_BARCO1, VERTICAL};
-	struct Barco Barco2 = {A, 0, LON_BARCO2, VERTICAL};
-	struct Barco Barco3 = {A, 0, LON_BARCO3, VERTICAL};
-	struct Barco Barco4 = {A, 0, LON_BARCO4, VERTICAL};
-	struct Barco Barco5 = {A, 0, LON_BARCO5, VERTICAL};
-
-	struct Tablero TableroJugador1;
-	struct Tablero TableroJugador2;
-
-	int turno = 1;
-
 	return 0;
 }

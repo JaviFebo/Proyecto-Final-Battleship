@@ -57,3 +57,12 @@ void SiguienteTurno (struct Tablero *tablero, int turno) {
 	turno++;
 }
 
+bool JugadorGana (struct Tablero *tablero) {
+	for (int i = 0; i < TAMANO_TABLERO; i++) {
+                for (int j = 0; j < TAMANO_TABLERO; j++) {
+                        if (tablero -> celdas [i][j] == BARCO) {
+			       return false;	       
+		}
+	}
+	return true;
+}

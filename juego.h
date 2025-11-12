@@ -109,6 +109,17 @@ int Atacar (struct Tablero *tablero, int x, int y);
  */
 void SiguienteTurno (struct Tablero *tablero, int turno);
 
+/* Función que verifica que un jugador ganó
+ * Recibe: 
+ * - Una dirección de una instancia de la estructura de tablero
+ * Hace:
+ * - Recorre la matriz del tablero
+ * Regresa:
+ * - Falso si aún hay barcos presentes en el tablero rival
+ * - Verdadero si no hay barcos presentes en el tablero rival
+ */
+bool JugadorGana (struct Tablero *tablero);
+
 extern struct Tablero TableroJugador1;
 extern struct Tablero TableroJugador2;
 

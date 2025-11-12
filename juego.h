@@ -3,7 +3,6 @@
 
 #define TAMANO_TABLERO 10
 #define CANTIDAD_BARCOS 5
-#define INDf 4;
 
 typedef enum {
         A,
@@ -22,7 +21,8 @@ typedef enum {
         AGUA,
         BARCO,
         ACIERTO,
-        FALLO
+        FALLO,
+	INDF
 } EstadoCelda;
 
 struct Barco {

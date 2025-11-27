@@ -22,7 +22,7 @@ en archivos .c y .h, y permitir ejecutar el juego en sistemas Linux.
 
 ### Instalación de Raylib:
 
-Instalar el archivo en el siguiente enlace de descarga de [Raylib](https://github.com/raysan5/raylib/releases/download/5.5/raylib-5._linux_amd64.tar.gz)
+Instalar el archivo en el siguiente enlace de descarga de [Raylib](https://github.com/raysan5/raylib/releases/download/5.5/raylib-5._linux_amd64.tar.gz).
 Una vez instalado, deberá descomprimir el contenido. Una vez descomprimido el 
 archivo, deberá posicionarse en el directorio de la descarga y ejecutar el comando
 `sudo cp -r ./* /usr/`.
@@ -35,12 +35,12 @@ utilice el comando `cd Proyecto-Final-Battleship`.
 
 ## 3. Ejecución y compilación
 
-###Compilación
+### Compilación
 
 Dentro del directorio del proyecto, utilice el comando `make`. Esto va a generar 
 un archivo `/build/output`.
 
-###Ejecución
+### Ejecución
 
 Utilice el comando `cd build/` para acceder al directorio donde está el ejecutable 
 y dentro utilice el comando `./output` para ejecutar el programa.

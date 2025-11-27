@@ -22,10 +22,12 @@ en archivos .c y .h, y permitir ejecutar el juego en sistemas Linux.
 
 ### Instalación de Raylib:
 
-Instalar el archivo en el siguiente enlace de descarga de [Raylib](https://github.com/raysan5/raylib/releases/download/5.5/raylib-5._linux_amd64.tar.gz).
+Instalar el archivo en el siguiente enlace de descarga de [Raylib 5.5V](https://github.com/raysan5/raylib/releases/download/5.5/raylib-5._linux_amd64.tar.gz) para Linux.
 Una vez instalado, deberá descomprimir el contenido. Una vez descomprimido el 
 archivo, deberá posicionarse en el directorio de la descarga y ejecutar el comando
 `sudo cp -r ./* /usr/`.
+De forma alternativa, ingrese al repositorio de GitHub de [Raylib](https://github.com/raysan5/raylib) y siga los 
+pasos indicados para la descarga en su entorno específico.
 
 ### Clonación del proyecto:
 
